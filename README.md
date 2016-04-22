@@ -8,11 +8,12 @@ Different from the original master, this fork removes unnecessary code and depen
 
 In my version, the nertwork operations are handled by Caffe, while loss minimization and other miscellaneous matrix operations are performed using numpy and scipy. L-BFGS is adopted for optimization.
 
-To run the code, first set the correct model in the demo.py, e.g. GoogLeNet, VGG16, VGG19 or simply CaffeNet and put the corresponding pretrained caffemodel in the folder so that the program could correctly find it.  
-Then
+To run the code, first set the correct model in the demo.py, e.g. GoogLeNet, VGG16, VGG19 or simply CaffeNet and put the corresponding pretrained caffemodel in the folder so that the program could correctly find it. Then
+
 ```bash
 python demo.py -s <style-image> -c <content-image>
 ```
+
 You are also encouraged to read the `style.py` which is the core of the algorithm.
 
 ## Requirements
